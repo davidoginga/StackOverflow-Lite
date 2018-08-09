@@ -1,0 +1,180 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<style>    
+.top
+    {
+        background-color: khaki;
+        height: 100px;
+        width: 100%;
+        
+    }
+body
+{
+background-color: beige;
+height: 100%;
+}    
+.leftpane
+{
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 35px;
+    padding: 20px;
+    float: left;
+    
+}
+.rightpane
+{
+    float: left;
+    width: 70%;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-family: Segoe UI;
+}
+.leftpane img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.leftpane p
+{
+    font-family: Segoe UI;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+}
+.recent
+{
+    width: 90%;
+    height: 40%;
+    background-color: rgb(233, 233, 240);
+    margin: auto;
+    overflow: scroll;
+    padding: 4px;
+}
+.mostanswers
+{
+    width: 90%;
+    height: 40%;
+    background-color: rgb(233, 233, 240);
+    margin: auto;
+    overflow: scroll;
+    padding: 4px;
+}
+#wrapper
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    overflow: scroll;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+.read-more-state {
+  display: none;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="top">
+            <a href="index.html">
+                <img src="logo.PNG" alt="StackOverflow-Lite" style="margin: 20px 100px; font-size: 24px; font-family: Segoe UI; font-weight: bold; font-style: italic">
+            </a>
+            <a href="login.html">
+                <button style="background-color: #f6f8fa; color: #2196f3; float:right; margin-top: 40px; margin-right: 40px; font-size: 20px">Log In</button>
+            </a>
+            <a href="create.html">
+                <button style="background-color: #2196f3; color: white; float: right; margin-top: 40px; margin-right: 20px; font-size: 20px">Sign Up</button>
+            </a>
+        
+        
+        
+        </div>
+        <div class="leftpane">
+            <img src="profile.png">
+            <p>Name</p>
+            <p style="font-weight: normal; font-style: italic">Username</p>
+            <p style="text-align: left; font-size: 22px; margin: 0em; font-weight: normal">Activity Log</p>
+            <hr>
+            <br>
+            <p style="font-weight: normal; text-align: left ">Number of Questions Asked:
+                <label style="color: rgb(148, 120, 148)">Value Here</label>
+            </p>
+            <br>
+            <p style="font-weight: normal; text-align: left ">Number of Answers Given:
+                <label style="color: rgb(148, 120, 148)">Value Here</label>
+            </p>
+        </div>
+        
+        <div class="rightpane">
+            <p style="margin-left: 30px; text-align: center; font-size: 20px">Recent questions</p>
+            <div class="recent">
+                <input type="checkbox" class="read-more-state" id="post-1" />
+                <p class="read-more-wrap">Q. This is a question...
+                    <span class="read-more-target">
+                        This question appears here because it is among your most recent questions</span>
+                        
+                </p>
+    
+                <input type="checkbox" class="read-more-state" id="post-2" />
+                
+                <ul class="read-more-wrap">
+                    <li>Answer One</li>
+                    <li>Answer Two</li>
+                    <li class="read-more-target">Answer Three</li>
+                    <li class="read-more-target">Answer Four</li>
+                </ul>
+                
+                            <label for="post-1" class="read-more-trigger"></label>
+
+            </div>
+            <p style="margin-left: 30px; text-align: center; font-size: 20px">Most Answered</p>
+
+
+            
+            <div class="mostanswers">
+                <p >Q. This is where your most answered questions appear</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
