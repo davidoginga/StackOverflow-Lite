@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>button</title>
+            <style>
+    .top
+    {
+        background-color: khaki;
+        height: 150px;
+        width: 100%;
+        margin-top: 0%;
+        
+    }
+    p
+    {
+        font-family: Segoe UI;
+    }
+    .mainbody
+    {
+       height: 2000px;
+       width: 100%;
+       background-color: beige;
+       margin-top: 5px;
+    }
+    .third
+    {
+        width: 45%;
+        background-color: khaki;
+        height: 280px; 
+        float: left;
+        margin-top: 10px;
+        margin-left: 4%;
+    }
+    .fourth
+    {
+        width: 45%;
+        background-color: khaki;
+        height: 280px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 5%;
+    }
+        .regbutton
+    {
+        background-color: #2196f3;
+        color: white;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    button
+    {
+        cursor: pointer;
+    }
+    .leftpane
+    {
+        background-color: white;
+        width: 20%;
+        height: 50%;
+        margin-top: 5px;
+        margin-left: 4%;
+        padding: 20px;
+        float: left;
+        text-align: right;
+    
+    }
+    .rightpane
+    {
+        width: 66%;
+        background-color: white;
+        float: left;
+        margin-top: 5px;
+        margin-left: 20px;
+        height: 100%;
+        padding: 20px;
+    }
+        .recent
+    {
+        width: 90%;
+        height: 10%;
+        background-color: rgb(233, 233, 240);
+        margin: auto;
+        overflow: scroll;
+        padding: 4px;
+    }
+    .mostanswers
+    {
+        width: 90%;
+        height: 10%;
+        background-color: rgb(233, 233, 240);
+        margin: auto;
+        overflow: scroll;
+        padding: 4px;
+    }
+        .postbutton
+    {
+        background-color: #2196f3;
+        color: white;
+        font-size: 24px;
+        border-width: 0px;
+        float: right;
+        margin-bottom: 20px;
+        margin-right: 60px;
+    }
+        .postbutton:hover
+    {
+        background-color: rgb(0, 225, 255);
+    }
+    .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+    }
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    }
+    .read-more-state ~ .read-more-trigger:before {
+    content: 'Show Answers';
+    }
+
+    .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Hide Answers';
+    }
+
+    .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    }
+    .read-more-state {
+    display: none;
+    }
+    body
+    {
+        background-color: beige;
+    }
+    footer
+    {
+        float: left;
+        background-color: beige;
+        height: 100px;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+            </style>
+
+    </head>    
+        <body>
+            <div class="top">
+                <a href="index.html">
+                    <img src="logo.PNG" alt="StackOverflow-Lite" style="margin: 20px 100px; float: left; font-size: 24px; font-family: Segoe UI; font-weight: bold; font-style: italic">
+                </a>
+                <a href="profile.html">
+                    <img src="profile.png" height="50" width="50" style="margin-top: 15px; float: left;"> </a>
+            
+                <a href="login.html">
+                    <button style="background-color: #f6f8fa; color: #2196f3; float:right; margin-top: 40px; margin-right: 40px; font-size: 20px">Log In</button>
+                </a>
+                <a href="create.html">
+                    <button style="background-color: #2196f3; color: white; float: right; margin-top: 40px; margin-right: 20px; font-size: 20px">Sign Up</button>
+                </a>
+            
+            
+            </div>
+            <div class="mainbody">
+                    <div class="third">
+                        <p style="font-size: 24px; font-weight: bold; font-style: italic; padding: 10px; font-family: 'Segoe UI' ">Ask, Answer, Learn!!!</p>
+                        <p style="font-size: 16px; font-family: 'Segoe UI'; padding: 10px">A Platform Where All Your Qestions are Answered</p>
+                        <p style="font-size: 16px; font-family: 'Segoe UI'; padding: 10px">Join the community and get a quick solution to any of your questions</p>
+                    </div>
+                    <div class="fourth">
+                        <form style="margin: 20px; font-size:18px">
+                           
+                            
+                            <input type="text" name="Full Name" Placeholder="Name..." style="border-radius: 7px; border: 1px; font-size: 18px">
+                            <br>
+                            <br>
+                            <input type="text" name="Username" placeholder="Username..." style="border-radius: 7px; border: 1px; font-size: 18px">
+                            <br> 
+                            <br>
+                            <input type="text" name="Email" placeholder="Email..." style="border-radius: 7px; border: 1px; font-size: 18px">
+                            <br> 
+                            <br>
+                            <input type="text" name="Password" placeholder="Password..." style="border-radius: 7px; border: 1px; font-size: 18px">
+                            <br>
+                            <button type="submit" class="regbutton">Sign Up</button>
+                            <hr>
+                            <p style="font-style: italic">Already have an account?
+                                <a href="login.html">Log in</a>
+                                </a>
+                            </p>
+                        </form>
+                    
+                    </div>
+                <div class="leftpane">
+                    <p>Navigation</p><p>Link 1</p><p>Link 2</p>
+                </div>  
+                <div class="rightpane">
+                    <p style="font-family: Segoe UI; font-size: 24px; font-weight: bold; margin-left: 4.5%">Recent Questions</p>
+                    <button id="myBtn" class="postbutton">Post Question</button>
+                    <div class="recent">
+                        <input type="checkbox" class="read-more-state" id="post-1" />
+                        <p class="read-more-wrap">Q. This is a question...
+                            <span class="read-more-target">
+                                This question appears here because it is part of the recent questions</span>
+                    
+                        </p>
+                    
+                        <input type="checkbox" class="read-more-state" id="post-2" />
+                    
+                        <ul class="read-more-wrap">
+                            <li>Answer One</li>
+                            <li>Answer Two</li>
+                            <li class="read-more-target">Answer Three</li>
+                            <li class="read-more-target">Answer Four</li>
+                        </ul>
+                    
+                        <label for="post-1" class="read-more-trigger"></label>
+                    
+                    </div><br>
+ 
+                    
+                    
+                    
+                    <div class="mostanswers">
+                        <p>Q. This is another question that is part of the recent questions</p>
+                    </div>
+                </div>  
+            </div>
+            <footer><p>Created by David</p>
+            <p>David:
+                <a href="mailto:ogingadavid32@gmail.com.com">
+                    David </a></p><p>&copy;copyright</p></footer>
+
+        </body>
+
+
+
+
+
+
+
+</html

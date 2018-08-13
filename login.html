@@ -36,13 +36,26 @@
             font-size: 18px;
             margin-top: 10px;
         }
-        button
-        {
+
+        button {
             cursor: pointer;
         }
-        
     </style>
+    <script>
+        function validateform() {
+            var x = document.forms["myform"]["Email"].value;
+            var y = document.forms["myform"]["Password"].value;
+            if (x == "") {
+                alert("Email cannot be blanc");
+                return false;
+            }
+            else if (y == "") {
+                alert("Password is empty");
+                return false;
+            }
 
+        }
+    </script>
 
 
 </head>
@@ -52,9 +65,13 @@
         <a href="index.html">
             <a href="index.html">
                 <img src="logo.PNG" alt="StackOverflow-Lite" style="margin: 20px 100px; font-size: 24px; font-family: Segoe UI; font-weight: bold; font-style: italic">
-        </a>
-        <a href="login.html"><button style="background-color: #f6f8fa; color: #2196f3; float:right; margin-top: 40px; margin-right: 40px; font-size: 20px">Log In</button></a>
-        <a href="create.html"><button style="background-color: #2196f3; color: white; float: right; margin-top: 40px; margin-right: 20px; font-size: 20px">Sign Up</button></a>
+            </a>
+            <a href="login.html">
+                <button style="background-color: #f6f8fa; color: #2196f3; float:right; margin-top: 40px; margin-right: 40px; font-size: 20px">Log In</button>
+            </a>
+            <a href="create.html">
+                <button style="background-color: #2196f3; color: white; float: right; margin-top: 40px; margin-right: 20px; font-size: 20px">Sign Up</button>
+            </a>
 
 
     </div>
@@ -64,17 +81,19 @@
             <p style="text-align: center; font-size: 20px; font-family: Segoe UI; position: absolute; margin-top: 30px; margin-left: 25%; color: white">Sign into your StackOverflow-Lite Account</p>
         </center>
         <div class="create">
-            <form style="margin: 20px; font-size:18px; font-family: Segoe UI">
+            <form name="myform" action="index.html" onsubmit="return validateform()" method="POST" style="margin: 20px; font-size:18px; font-family: Segoe UI">
 
 
                 <br> Email:
                 <br>
                 <input type="text" name="Email" placeholder="" style="border-radius: 7px; border: 1px; font-size: 18px">
-                <br> <br>Password:
+                <br>
+                <br>Password:
                 <br>
                 <input type="text" name="Password" placeholder="" style="border-radius: 7px; border: 1px; font-size: 18px">
                 <br>
-                <button type="submit" class="regbutton">Log In</button><hr>
+                <button type="submit" class="regbutton">Log In</button>
+                <hr>
                 <p style="font-style: italic">Dont have an account?
                     <a href="create.html">Sign Up</a>
                     </a>
