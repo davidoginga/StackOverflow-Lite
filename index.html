@@ -1,251 +1,176 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>button</title>
-            <style>
-    .top
-    {
-        background-color: khaki;
-        height: 150px;
-        width: 100%;
-        margin-top: 0%;
-        
-    }
-    p
-    {
-        font-family: Segoe UI;
-    }
-    .mainbody
-    {
-       height: 2000px;
-       width: 100%;
-       background-color: beige;
-       margin-top: 5px;
-    }
-    .third
-    {
-        width: 45%;
-        background-color: khaki;
-        height: 280px; 
-        float: left;
-        margin-top: 10px;
-        margin-left: 4%;
-    }
-    .fourth
-    {
-        width: 45%;
-        background-color: khaki;
-        height: 280px;
-        float: right;
-        margin-top: 10px;
-        margin-right: 5%;
-    }
-        .regbutton
-    {
-        background-color: #2196f3;
-        color: white;
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    button
-    {
-        cursor: pointer;
-    }
-    .leftpane
-    {
-        background-color: white;
-        width: 20%;
-        height: 50%;
-        margin-top: 5px;
-        margin-left: 4%;
-        padding: 20px;
-        float: left;
-        text-align: right;
-    
-    }
-    .rightpane
-    {
-        width: 66%;
-        background-color: white;
-        float: left;
-        margin-top: 5px;
-        margin-left: 20px;
-        height: 100%;
-        padding: 20px;
-    }
-        .recent
-    {
-        width: 90%;
-        height: 10%;
-        background-color: rgb(233, 233, 240);
-        margin: auto;
-        overflow: scroll;
-        padding: 4px;
-    }
-    .mostanswers
-    {
-        width: 90%;
-        height: 10%;
-        background-color: rgb(233, 233, 240);
-        margin: auto;
-        overflow: scroll;
-        padding: 4px;
-    }
-        .postbutton
-    {
-        background-color: #2196f3;
-        color: white;
-        font-size: 24px;
-        border-width: 0px;
-        float: right;
-        margin-bottom: 20px;
-        margin-right: 60px;
-    }
-        .postbutton:hover
-    {
-        background-color: rgb(0, 225, 255);
-    }
-    .read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
-    }
-    .read-more-state:checked ~ .read-more-wrap .read-more-target {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
-    }
-    .read-more-state ~ .read-more-trigger:before {
-    content: 'Show Answers';
-    }
 
-    .read-more-state:checked ~ .read-more-trigger:before {
-    content: 'Hide Answers';
-    }
+<head>
+    <title>Home</title>
+    <style>
+        .top {
+            background-color: khaki;
+            height: 150px;
+            width: 100%;
+            margin-top: 0%;
 
-    .read-more-trigger {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 .5em;
-    color: #666;
-    font-size: .9em;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: .25em;
-    }
-    .read-more-state {
-    display: none;
-    }
-    body
-    {
-        background-color: beige;
-    }
-    footer
-    {
-        float: left;
-        background-color: beige;
-        height: 100px;
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-    }
-            </style>
+        }
 
-    </head>    
-        <body>
-            <div class="top">
-                <a href="index.html">
-                    <img src="logo.PNG" alt="StackOverflow-Lite" style="margin: 20px 100px; float: left; font-size: 24px; font-family: Segoe UI; font-weight: bold; font-style: italic">
-                </a>
-                <a href="profile.html">
-                    <img src="profile.png" height="50" width="50" style="margin-top: 15px; float: left;"> </a>
-            
-                <a href="login.html">
-                    <button style="background-color: #f6f8fa; color: #2196f3; float:right; margin-top: 40px; margin-right: 40px; font-size: 20px">Log In</button>
-                </a>
-                <a href="create.html">
-                    <button style="background-color: #2196f3; color: white; float: right; margin-top: 40px; margin-right: 20px; font-size: 20px">Sign Up</button>
-                </a>
-            
-            
-            </div>
-            <div class="mainbody">
-                    <div class="third">
-                        <p style="font-size: 24px; font-weight: bold; font-style: italic; padding: 10px; font-family: 'Segoe UI' ">Ask, Answer, Learn!!!</p>
-                        <p style="font-size: 16px; font-family: 'Segoe UI'; padding: 10px">A Platform Where All Your Qestions are Answered</p>
-                        <p style="font-size: 16px; font-family: 'Segoe UI'; padding: 10px">Join the community and get a quick solution to any of your questions</p>
-                    </div>
-                    <div class="fourth">
-                        <form style="margin: 20px; font-size:18px">
-                           
-                            
-                            <input type="text" name="Full Name" Placeholder="Name..." style="border-radius: 7px; border: 1px; font-size: 18px">
-                            <br>
-                            <br>
-                            <input type="text" name="Username" placeholder="Username..." style="border-radius: 7px; border: 1px; font-size: 18px">
-                            <br> 
-                            <br>
-                            <input type="text" name="Email" placeholder="Email..." style="border-radius: 7px; border: 1px; font-size: 18px">
-                            <br> 
-                            <br>
-                            <input type="text" name="Password" placeholder="Password..." style="border-radius: 7px; border: 1px; font-size: 18px">
-                            <br>
-                            <button type="submit" class="regbutton">Sign Up</button>
-                            <hr>
-                            <p style="font-style: italic">Already have an account?
-                                <a href="login.html">Log in</a>
-                                </a>
-                            </p>
-                        </form>
-                    
-                    </div>
-                <div class="leftpane">
-                    <p>Navigation</p><p>Link 1</p><p>Link 2</p>
-                </div>  
-                <div class="rightpane">
-                    <p style="font-family: Segoe UI; font-size: 24px; font-weight: bold; margin-left: 4.5%">Recent Questions</p>
-                    <button id="myBtn" class="postbutton">Post Question</button>
-                    <div class="recent">
-                        <input type="checkbox" class="read-more-state" id="post-1" />
-                        <p class="read-more-wrap">Q. This is a question...
-                            <span class="read-more-target">
-                                This question appears here because it is part of the recent questions</span>
-                    
-                        </p>
-                    
-                        <input type="checkbox" class="read-more-state" id="post-2" />
-                    
-                        <ul class="read-more-wrap">
-                            <li>Answer One</li>
-                            <li>Answer Two</li>
-                            <li class="read-more-target">Answer Three</li>
-                            <li class="read-more-target">Answer Four</li>
-                        </ul>
-                    
-                        <label for="post-1" class="read-more-trigger"></label>
-                    
-                    </div><br>
- 
-                    
-                    
-                    
-                    <div class="mostanswers">
-                        <p>Q. This is another question that is part of the recent questions</p>
-                    </div>
-                </div>  
-            </div>
-            <footer><p>Created by David</p>
-            <p>David:
-                <a href="mailto:ogingadavid32@gmail.com.com">
-                    David </a></p><p>&copy;copyright</p></footer>
+        button {
+            cursor: pointer;
+        }
 
-        </body>
+        .main_body {
+            background: url(background4.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            max-height: 900px;
+            height: 1281px;
+            background-position: center;
+            background-size: cover;
+            vertical-align: middle;
+            text-align: right;
+            font-family: Segoe UI;
+            font-size: 24PX;
+
+
+        }
+
+        .footer {
+            height: 150px;
+            background-color: beige;
+            text-align: center;
+            padding: 20px;
+            font-family: Segoe UI;
+            font-size: 18px;
+        }
+
+        .button1 {
+            background-color: #2196f3;
+            color: white;
+            margin-top: 30px;
+            margin-left: 800px;
+            font-size: 30px;
+        }
+
+        .post_button {
+            background-color: #2196f3;
+            color: white;
+            margin-top: 20px;
+            margin-left: 600px;
+            font-size: 30px;
+
+        }
+
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+
+        }
+
+        .modalDialog:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modalDialog>div {
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #fff;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+
+        }
+
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        .close:hover {
+            background: #00d9ff;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="beige">
+    <div class="top">
+        <a href="index.html">
+            <img src="logo.PNG" alt="StackOverflow-Lite" style="margin: 20px 100px; float: left; font-size: 24px; font-family: Segoe UI; font-weight: bold; font-style: italic">
+        </a>
+        <a href="profile.html">
+            <img src="profile.png" height="50" width="50" style="margin-top: 15px; float: left;"> </a>
+
+        <a href="login.html">
+            <button style="background-color: #f6f8fa; color: #2196f3; float:right; margin-top: 40px; margin-right: 40px; font-size: 20px">Log
+                In
+            </button>
+        </a>
+        <a href="create.html">
+            <button style="background-color: #2196f3; color: white; float: right; margin-top: 40px; margin-right: 20px; font-size: 20px">Sign
+                Up
+            </button>
+        </a>
+        <a href="recent_questions.html"><button class="button1">Top Questions</button></a>
 
 
 
+    </div>
 
+    <div class="main_body">
+        <br>
+        <a href="#openModal"><button class="post_button">Post Question</button></a>
+        <br>
+        <p style="margin-right: 20px; font-weight: bolder">StackOverflow-Lite is a platform where all your questions are
+            answered.
+        </p>
+        <p style="font-weight: bold; font-style: italic; margin-right: 20px">ASK, ANSWER, LEARN!!!</p>
+        <p class="text1" style="margin-right: 20px">Have a question that you would like an answer to?</p>
+        <p class="text2" style="margin-right: 20px">Well, StackOverflow-Lite is definitely the platform for you</p>
+        <!--<p class="text 3" style="margin-right: 20px">StackOverflow-Lite, A platform where all your problems are solved!</p>-->
+    </div>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Enter Your Question</h2>
 
+            <form>
+                <textarea name="textarea" style="width:400px;height:150px;"></textarea>
+            </form>
+            <button style="cursor: pointer; background-color:#2196f3; color:white; font-size: 16px">Post Question</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p style="font-weight:bold">Created by David</p>
+        &copy; Copyright
 
+    </div>
+</body>
 
-</html
+</html>
